@@ -1,5 +1,7 @@
-export default function UserProfilepage({}) {
+export default function UserProfilePage({}) {
   return (
-    <main></main>
+    <main>
+      <h1>User posts</h1>
+    </main>
   )
 }
