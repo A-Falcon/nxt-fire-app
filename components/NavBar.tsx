@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export default function NavBar() {
-  const user = null
-  const username = null
+  const user = true
+  const username = true
 
   return (
     <nav className='navbar'>
@@ -12,6 +12,7 @@ export default function NavBar() {
             <button className='btn-black'>FEED</button>  
           </Link>
         </li>
+
         {/* user is signed-in and has userName */}
         {username && (
           <>
@@ -22,11 +23,12 @@ export default function NavBar() {
             </li>
             <li>
               <Link href={`/${username}`} >
-                <img src={user?.photoUrl} />
+                <img src={user?.photoURL} />
               </Link>
             </li>
           </>
         )}
+
         {/* user is NOT signed-in and has NOT created username */}
         {!username && (
           <li>
