@@ -4,7 +4,8 @@ import { UserContext } from '../lib/context'
 
 export default function EnterPage(props) {
   const {user, userName} = useContext(UserContext)
-
+  // const user = null
+  // const userName = null
   return (
     <main>
       { user ?
@@ -34,5 +35,7 @@ function SignOutButton() {
 }
 
 function UserNameForm() {
-  
+  return (
+    <h1>hihi</h1>
+  )
 }
