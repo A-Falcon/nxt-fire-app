@@ -8,7 +8,7 @@ import toast from 'react-hot-toast'
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       {/* <Loader show/> */}
       <button onClick={() => toast.success('hello toast!')}>
         Toast
